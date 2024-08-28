@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic World Clock</title>
+    <!-- Liên kết đến file CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font từ Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Luxon Library -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.5.0/build/global/luxon.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="clock-widget">
+            <h1>Dynamic World Clock</h1>
+            <!-- Thêm biểu tượng thời gian -->
+            <div class="time-icon">&#128337;</div>
+            <!-- Hiển thị giờ -->
+            <div id="clock" class="clock">Loading time...</div>
+            <!-- Hiển thị thông tin vị trí -->
+            <div id="location" class="location">Loading location...</div>
+        </div>
+    </div>
+
+    <!-- Liên kết đến file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

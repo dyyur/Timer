@@ -1,0 +1,67 @@
+/* Đặt kiểu chữ mặc định và định dạng nền */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Container tổng quát */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Phần đồng hồ */
+.clock-widget h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.time-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.clock {
+    font-size: 56px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.location {
+    font-size: 24px;
+    color: #cfcfcf;
+    margin-top: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Hiệu ứng mờ nền và bóng đổ */
+.container {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
